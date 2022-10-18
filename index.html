@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Mobile formatting -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--fancybox for imgs-->
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+	<!--fancybox-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<!--superslides for top of pages imgs-->
+	<link rel="stylesheet" type="text/css" href="css/superslides.css">
+	<!--owl carousel for skills section-->
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<!-- bootstrap cdn-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- style.css file-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- fontawesome for fonts-->
+	<script src="https://kit.fontawesome.com/3c028052b1.js" crossorigin="anonymous"></script>
+
+	<title>Andy Valencia</title>
+</head>
+	<body>
+		<!--logo for loading page -->
+		<div class = "loader">
+		<div class ="inner">
+			
+		</div>
+		</div>
+
+	<header>
+		<!--navigation bar--> 
+		<div class = "container">
+			<div class=" subContainer">
+				<nav class="navbar">
+					<a href="#slides" class="nav-branding">HOME</a>
+					
+					<ul class="nav-menu">
+						<li class="nav-item">
+							<a href ="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href ="#skillsSet" class="nav-link">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a href ="#contact" class="nav-link">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a href ="#portfolio" class="nav-link">Portfolio</a>
+						</li>
+					</ul>
+					<!--Hamburger-->
+				<div class="hamburger">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+		<!--slides, title, and control buttons-->
+		<div id="slides">
+			<div class= "overlay"></div>
+				<div class="slides-container">
+					<img src="img/slide1.jpeg" alt="">
+		   			<img src="img/slide2.jpeg" alt="">
+		   			<img src="img/slide3.jpeg" alt="">
+	  			</div>
+
+  					<div class = "titleMessage">
+  						<div class = "heading">
+			  				<p class = "main">ANDY VALENCIA</p>
+			  				<p class = "sub typed"></p>
+  						</div>
+  					</div>
+  				<nav class="slides-navigation">
+			    	<a href="#" class="next"></a>
+			   		<a href="#" class="prev"></a>
+			 	</nav>
+	 	</div>
+
+	 	
+		
+
+		<!-- skills section title and carousel-->
+		<!--
+		<div id= "skillsSet" class = "skills" class = "skillsSection section">
+			<div class="iOverlay"></div>
+ 			<div class= "container">
+ 				<div class = "row">
+ 					<div class="col-md-12 text-center">
+ 						<h2>TECHNICAL SKILLS</h2>
+ 						<p>Scroll to the right or left to see my other skills</p>
+ 					</div>
+
+ 						<div class="owl-carousel owl-theme">
+					   		
+					   		Skills on chart
+					   		<div class="skill">
+						    	<span class="chart" data-percent = "67">
+						    		<span class = "percent" > 0</span>
+						    		<canvas height="152" width="152"></canvas>
+						    	</span>
+						    	<img src="img/java.png">
+						    	<p>Used in most college projects as well as Android apps I have developed. I use leetcode to practice and to keep my skills revelavent.</p>
+						    </div>
+
+							 <div class="skill">
+							    <span class="chart" data-percent = "60">
+							    	<span class = "percent" > 0</span>
+							    		<canvas height="152" width="152"></canvas>
+							    	</span>
+									 	<img src="img/c.png">
+							    		<p>Took an elective in college and was used in many projects in other courses.</p>
+							</div>
+
+							 <div class="skill">
+							    	<span class="chart" data-percent = "50">
+							    		<span class = "percent" > 0</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+							    		<img src="img/cSharp.png">
+							    		<p>I used C# to develop an Android AR APP and due to its similarity with Java it was very easy to adapt quickly.</p>
+							 </div>
+
+							    <div class="skill">
+							    	<span class="chart" data-percent = "10">
+							    		<span class = "percent" > 0</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/c++.png">
+								    	<p>Took a Data Structures and Algorithms course at a junior college. All projects and assignments were done using C++.</p>
+								</div>
+							    
+							    <div class="skill">
+							    	<span class="chart" data-percent = "35">
+							    		<span class = "percent" > 0</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/python.png">
+								    	<p>I Used Jupyter and Anaconda for some projects in college. My Anylisis of Algorithms research was on facial recogniton algorithms which most were written using Python OpenCV library. Currently taking a course online.</p>
+							    </div>
+
+							    <div class="skill">
+							    	<span class="chart" data-percent = "40">
+							    		<span class = "percent" > 0</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/html.png">
+								    	<p>Built this website using HTML and currently taking a frontend developing course.</p>
+							    </div>
+
+							    <div class="skill">
+							    	<span class="chart" data-percent = "40">
+							    		<span class = "percent" > 0</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/css.png">
+								    	<p>Used in the development of this portfolio website and currently taking a course in frontend developing.</p>
+							    </div>
+
+							    <div class="skill">
+							    	<span class="chart" data-percent = "15">
+							    		<span class = "percent" > 15</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/js.png">
+								    	<p>Wrote a few sqripts in the developmnet of this prortfolio website and currently taking a frontend developing course.</p>
+								</div>
+
+								 <div class="skill">
+							    	<span class="chart" data-percent = "15">
+							    		<span class = "percent" > 15</span>
+							    			<canvas height="152" width="152"></canvas>
+							    	</span>
+								    	<img src="img/mysql.png">
+								    	<p>Took Data management as an elective in college as well as database design as part of my Android app developer certicate program at a junior college. Designed and developed a database and GUI using MySQLWorkbench and IntelliJ.</p>
+								</div>
+					</div>
+ 				</div>
+ 			</div>	
+ 		</div>
+			-->
+		<!--Portfolio with apps, thumbnails, projects, and pc-->			 	
+		<div id = "portfolio" class = "section">
+			<div class="container">
+				<div class = "row">
+					<div class = "heading">
+						<h2>PORTFOLIO</h2>
+					</div>
+						<div class ="filter">
+							<ul id = "filters">
+								<li><a href = "#" data-filter = "*" class = "current"> ALL </a></li>
+								<li><a href = "#" data-filter = ".projects"> Projects </a></li>
+								<li><a href = "#" data-filter = ".group "> Group Projects </a></li>
+							</ul>
+						</div>
+
+					<div class = "itemsContainer">
+						<ul class = "items">
+							<!--Thumbnails with fanccybox-->
+							<li class ="projects col-xs-6 col-sm4 col-md-3 col-lg-3">
+								<div class="item">
+									<img src="img/Fly2.png">
+									
+									<div class="icons">
+										<a data-fancybox="gallery-a" href="img/cookie.jpg"
+										 title="View Image"
+										 class="openButton" data-fancybox data-caption = "Dino ABC's">
+										 <i class = "fas fa-search"></i>
+											  
+											</a>
+
+											<div style="display:none">
+											  <a data-fancybox="gallery-a" href="img/code.jpeg">
+											    
+											  </a>
+											  
+											</div>
+										
+											<a href="reports/report.pdf" target = "_blank" class="projectlink">
+												<i class = "fa fa-link"></i>
+											</a>
+									</div>
+									<div class="imageOverlay"></div>
+								</div>
+								<div class = "projectTitle">
+									<h4>Dino ABC's - AR Android App</h4>
+								</div>
+							</li>
+
+							
+
+							<li class ="group col-xs-6 col-sm4 col-md-3 col-lg-3">
+								<div class="item">
+								<img src="img/casinoTN.png">
+									
+									<div class="icons">
+										<a data-fancybox="gallery-b" href="img/ERD.png"
+										
+										 title="View Image"
+										 class="openButton" data-fancybox data-caption = "Entity Relationship Diagram">
+										 <i class = "fas fa-search"></i>
+											  
+											</a>
+
+											<div style="display:none">
+											  <a data-fancybox="gallery-b" href="img/GuiCompiled.png"
+											  	data-fancybox data-caption = "Graphical User Interface">
+											    </a>
+											  </div>
+
+											  <div style="display:none">
+											  <a data-fancybox="gallery-b" href="img/o_Membership.png"
+											  	data-fancybox data-caption = "GUI displaying customer information">
+											    </a>
+											</div>
+
+											    <div style="display:none">
+											  <a data-fancybox="gallery-b" href="img/MySQL1.png"
+											  	data-fancybox data-caption = "Casino Schema with tables">
+											    </a>
+
+											</div>
+											<a href="reports/CasinoJDBC.pdf" target = "_blank" class="projectlink">
+												<i class = "fa fa-link"></i>
+											</a>
+									</div>
+									<div class="imageOverlay"></div>
+								</div>
+								<div class = "projectTitle">
+									<h4>Casino Database - Java Swing</h4>
+								</div>
+							</li>
+
+							<li class ="group  col-xs-6 col-sm4 col-md-3 col-lg-3">
+								<div class="item">
+								<img src="img/appTN.jpeg">
+									<div class="icons">
+										<a href="img/dinoImg.jpeg" title="View Image"
+										 class="openButton" data-fancybox data-caption = "Dino ABC's">
+											<i class = "fas fa-search"></i>
+										</a>
+											<a href="" target = "_blank" class="projectlink">
+												<i class = "fa fa-link"></i>
+											</a>
+									</div>
+									<div class="imageOverlay"></div>
+								</div>
+							</li>
+
+
+							<li class ="projects col-xs-6 col-sm4 col-md-3 col-lg-3">
+								<div class="item">
+								<img src="img/appTN.jpeg">
+									<div class="icons">
+										<a href="img/dinoImg.jpeg" title="View Image"
+										 class="openButton" data-fancybox data-caption = "Dino ABC's">
+											<i class = "fas fa-search"></i>
+										</a>
+											<a href="" target = "_blank" class="projectlink">
+												<i class = "fa fa-link"></i>
+											</a>
+									</div>
+									<div class="imageOverlay"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+				<!-- about me section and picture-->	 
+		<div id = "about" class = "section">
+			
+				<div class = "row">
+
+						<div class = "col-md-7 text-center">
+							<h1> Hello
+							<br>my name is Andy Valencia
+							</h1>
+							 
+							 <p>I'm a recent graduate from California State University Dominguez Hills located in Carson, California. 
+							 	I earned my Bachelor of Science in Computer Science. I am currently seeking a role for growth and 
+							 	to develop additional skills from experienced professionals.</p>
+							 	<p> In my opinion nothing on the planet can measure 
+							 		the exponential growth and excitement in the tech industry, an industry which I want to be a part 
+							 		of, particularly Software Engineering. Computer Science and its immense diversity has interested me thoroughly. 
+							 		In particular: AR and VR technology, programming languages, machine learning, and building computers. These have stretched my knowledge of Computer Science and I always strive to expand my knowledge of these topics further.
+						</div>
+				</div>
+			</div>
+		</div>
+			<!--Contact section with emaii-->
+		<div id = "contact" class = "contactSection section">
+			<div class = "col-md-12 text-center">
+				<p class = "subHeading">Contact </p>
+				<h2> I'd like to hear from you!</h2>
+				<a href = "mailTo: andyvalencia.cs@gmail.com" class ="contactButton"> GET IN TOUCH!</a>
+			</div>
+		</div>
+
+			<div class = "copyrightSection">
+				<div class = "col-md-12 text-center">
+					<p>&copy; Copyright Andy Valencia 2022</p>	
+				</div>
+			</div>			 
+
+							
+
+
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script type="src = https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
