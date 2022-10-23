@@ -1,3 +1,7 @@
+
+
+<?php include 'myClass.php' ?>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -338,15 +342,41 @@
 			<div class = "col-md-12 text-center">
 				<p class = "subHeading">Contact </p>
 				<h2> I'd like to hear from you!</h2>
-				<a href = "mailTo: andyvalencia.cs@gmail.com" class ="contactButton"> GET IN TOUCH!</a>
+				<button class ="open-button" onclick="openForm()"> GET IN TOUCH!</button>			
 			</div>
 		</div>
+
+		<!-- A button to open the popup form -->
+<!--<button class="open-button" onclick="openForm()">Open Form</button>-->
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="" method = "POST" class="form-container">
+    <h1>Contact</h1>
+
+
+     <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Full Name" name="first name" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="message"><b>Message</b></label>
+    <textarea id = "message" name = "message" placeholder="Message"></textarea>
+    
+
+    <button  type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 
 			<div class = "copyrightSection">
 				<div class = "col-md-12 text-center">
 					<p>&copy; Copyright Andy Valencia 2022</p>	
 				</div>
-			</div>			 
+			</div>
+
+
 
 							
 
