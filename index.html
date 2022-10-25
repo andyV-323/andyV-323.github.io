@@ -79,10 +79,10 @@
 			  				<p class = "sub typed"></p>
   						</div>
   					</div>
-  				<nav class="slides-navigation">
+  				<!--<nav class="slides-navigation">
 			    	<a href="#" class="next"></a>
 			   		<a href="#" class="prev"></a>
-			 	</nav>
+			 	</nav>-->
 	 	</div>
 
 	 	
@@ -337,7 +337,7 @@
 				</div>
 			</div>
 		</div>
-			<!--Contact section with emaii-->
+			<!--Contact section with emaii
 		<div id = "contact" class = "contactSection section">
 			<div class = "col-md-12 text-center">
 				<p class = "subHeading">Contact </p>
@@ -346,10 +346,10 @@
 			</div>
 		</div>
 
-		<!-- A button to open the popup form -->
+		 A button to open the popup form -->
 <!--<button class="open-button" onclick="openForm()">Open Form</button>-->
 
-<!-- The form -->
+<!-- The form 
 <div class="form-popup" id="myForm">
   <form action="" method = "POST" class="form-container">
     <h1>Contact</h1>
@@ -367,8 +367,62 @@
 
     <button  type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
+  </form> 
+</div> -->
+
+			
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+
+
+<body>
+
+<link href="contact-form.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        <div class="fcf-credit" id="fcf-credit">
+        Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+        </div>
+
+    </form>
+    </div>
+
 </div>
+
+
+
 
 			<div class = "copyrightSection">
 				<div class = "col-md-12 text-center">
