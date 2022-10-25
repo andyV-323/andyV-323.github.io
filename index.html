@@ -1,6 +1,14 @@
 
 
+<?php
+	if(isset($_POST['btn'])){
+		$to = 'andyvalencia.cs@gmail.com';
+		$name = $_POST['fullName'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
 
+	}
+	?>
 	
 <!DOCTYPE html>
 <html>
@@ -337,7 +345,7 @@
 				</div>
 			</div>
 		</div>
-			<!--Contact section with emaii
+			<!--Contact section with email-->
 		<div id = "contact" class = "contactSection section">
 			<div class = "col-md-12 text-center">
 				<p class = "subHeading">Contact </p>
@@ -346,17 +354,17 @@
 			</div>
 		</div>
 
-		 A button to open the popup form -->
-<!--<button class="open-button" onclick="openForm()">Open Form</button>-->
+		<!-- A button to open the popup form 
+<button class="open-button" onclick="openForm()">Open Form</button>-->
 
-<!-- The form 
+<!-- The form -->
 <div class="form-popup" id="myForm">
   <form action="" method = "POST" class="form-container">
     <h1>Contact</h1>
 
 
      <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Full Name" name="first name" required>
+    <input type="text" placeholder="Full Name" name="fullName" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
@@ -365,43 +373,11 @@
     <textarea id = "message" name = "message" placeholder="Message"></textarea>
     
 
-    <button  type="submit" class="btn">Send</button>
+    <button  type="submit" name="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form> 
-</div> -->
+</div> 
 
-
-		<form method = "post" action = "index.html">
-			<label for = "name"> Name: </label>	
-			<input type="text" name="name" id = "name">
-
-			<label for="email"> Email:</label>
-			<input type="email" name="email" id = "email">
-
-			<label for = "comments">Comments:</label>
-			<textarea name = "comments" id = "comments"></textarea>
-
-
-			<input type = "submit" name = "send" value = "Send Message">
-
-
-
-
-	</form>
-	<?php
-
-if (isset($_POST['send'])) {
-	$to = 'andyvalencia.cs@gmail.com';
-	$subject = 'from my site';
-	$message = 'Name:' .$POST['name'] . "\r\n\r\n";
-	$message .='Email: ' .$_POST['email'] . "\r\n\r\n";
-	$message .= 'Comments: ' . $_POST['comments'];
-	$success = mail($to, $subject, $message, $headers);
-}
-?>
-			
-    
-    
 
 
 
