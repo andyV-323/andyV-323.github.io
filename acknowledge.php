@@ -6,6 +6,6 @@ if (isset($_POST['send'])) {
 	$message = 'Name:' .$POST['name'] . "\r\n\r\n";
 	$message .='Email: ' .$_POST['email'] . "\r\n\r\n";
 	$message .= 'Comments: ' . $_POST['comments'];
-	echo $message;
+	$success = mail($to, $subject, $message, $headers);
 }
 ?>
