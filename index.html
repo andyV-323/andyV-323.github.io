@@ -1,6 +1,6 @@
 
 
-<?php include 'contact-form-process.php' ?>
+<?php include 'acknowledge.php' ?>
 	
 <!DOCTYPE html>
 <html>
@@ -370,54 +370,33 @@
   </form> 
 </div> -->
 
+
+		<form method = "post" action = "acknowledge.php">
+			<label for = "name"> Name: </label>	
+			<input type="text" name="name" id = "name">
+
+			<label for="email"> Email:</label>
+			<input type="email" name="email" id = "email">
+
+			<label for = "comments">Comments:</label>
+			<textarea name = "comments" id = "comments"></textarea>
+
+
+			<input type = "submit" name = "send" value = "Send Message">
+
+
+
+
+	</form>
 			
     
-    <title>contact form</title>
+    
 
 
-<body>
 
-<link href="contact-form.css" rel="stylesheet">
 
-<div class="fcf-body">
 
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
-
-    <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-
-        <div class="fcf-credit" id="fcf-credit">
-       
-    </form>
-    </div>
-
-</div>
-
+    
 
 
 
