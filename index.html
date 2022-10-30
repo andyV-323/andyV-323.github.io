@@ -1,14 +1,6 @@
 
 
-<?php
-	if(isset($_POST['btn'])){
-		$to = 'andyvalencia.cs@gmail.com';
-		$name = $_POST['fullName'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-
-	}
-	?>
+ 
 
 <!DOCTYPE html>
 <html>
@@ -53,14 +45,14 @@
 						<li class="nav-item">
 							<a href ="#about" class="nav-link">About</a>
 						</li>
-						<li class="nav-item">
-							<a href ="#skillsSet" class="nav-link">Skills</a>
+						<li class="nav-branding">
+							<a href ="reports/123Res.pdf" target="=_blank"class="resumeBtn">Resume</a>
+						</li>
+						<li class="nav-branding">
+							<a href ="mailTo:andyvalencia.cs@gmail.com" class="contactBtn">Contact</a>
 						</li>
 						<li class="nav-item">
-							<a href ="#contact" class="nav-link">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a href ="#portfolio" class="nav-link">Portfolio</a>
+							<a href ="#portfolio" class="nav-link">Projects</a>
 						</li>
 					</ul>
 					<!--Hamburger-->
@@ -78,7 +70,7 @@
 				<div class="slides-container">
 					<img src="img/slide1.jpeg" alt="">
 		   			<img src="img/slide2.jpeg" alt="">
-		   			<img src="img/slide3.jpeg" alt="">
+		   			
 	  			</div>
 
   					<div class = "titleMessage">
@@ -87,126 +79,26 @@
 			  				<p class = "sub typed"></p>
   						</div>
   					</div>
-  				<!--<nav class="slides-navigation">
-			    	<a href="#" class="next"></a>
-			   		<a href="#" class="prev"></a>
-			 	</nav>-->
+  			
 	 	</div>
 
 	 	
 		
 
-		<!-- skills section title and carousel-->
-		<!--
-		<div id= "skillsSet" class = "skills" class = "skillsSection section">
-			<div class="iOverlay"></div>
- 			<div class= "container">
- 				<div class = "row">
- 					<div class="col-md-12 text-center">
- 						<h2>TECHNICAL SKILLS</h2>
- 						<p>Scroll to the right or left to see my other skills</p>
- 					</div>
-
- 						<div class="owl-carousel owl-theme">
-					   		
-					   		Skills on chart
-					   		<div class="skill">
-						    	<span class="chart" data-percent = "67">
-						    		<span class = "percent" > 0</span>
-						    		<canvas height="152" width="152"></canvas>
-						    	</span>
-						    	<img src="img/java.png">
-						    	<p>Used in most college projects as well as Android apps I have developed. I use leetcode to practice and to keep my skills revelavent.</p>
-						    </div>
-
-							 <div class="skill">
-							    <span class="chart" data-percent = "60">
-							    	<span class = "percent" > 0</span>
-							    		<canvas height="152" width="152"></canvas>
-							    	</span>
-									 	<img src="img/c.png">
-							    		<p>Took an elective in college and was used in many projects in other courses.</p>
-							</div>
-
-							 <div class="skill">
-							    	<span class="chart" data-percent = "50">
-							    		<span class = "percent" > 0</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-							    		<img src="img/cSharp.png">
-							    		<p>I used C# to develop an Android AR APP and due to its similarity with Java it was very easy to adapt quickly.</p>
-							 </div>
-
-							    <div class="skill">
-							    	<span class="chart" data-percent = "10">
-							    		<span class = "percent" > 0</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/c++.png">
-								    	<p>Took a Data Structures and Algorithms course at a junior college. All projects and assignments were done using C++.</p>
-								</div>
-							    
-							    <div class="skill">
-							    	<span class="chart" data-percent = "35">
-							    		<span class = "percent" > 0</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/python.png">
-								    	<p>I Used Jupyter and Anaconda for some projects in college. My Anylisis of Algorithms research was on facial recogniton algorithms which most were written using Python OpenCV library. Currently taking a course online.</p>
-							    </div>
-
-							    <div class="skill">
-							    	<span class="chart" data-percent = "40">
-							    		<span class = "percent" > 0</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/html.png">
-								    	<p>Built this website using HTML and currently taking a frontend developing course.</p>
-							    </div>
-
-							    <div class="skill">
-							    	<span class="chart" data-percent = "40">
-							    		<span class = "percent" > 0</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/css.png">
-								    	<p>Used in the development of this portfolio website and currently taking a course in frontend developing.</p>
-							    </div>
-
-							    <div class="skill">
-							    	<span class="chart" data-percent = "15">
-							    		<span class = "percent" > 15</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/js.png">
-								    	<p>Wrote a few sqripts in the developmnet of this prortfolio website and currently taking a frontend developing course.</p>
-								</div>
-
-								 <div class="skill">
-							    	<span class="chart" data-percent = "15">
-							    		<span class = "percent" > 15</span>
-							    			<canvas height="152" width="152"></canvas>
-							    	</span>
-								    	<img src="img/mysql.png">
-								    	<p>Took Data management as an elective in college as well as database design as part of my Android app developer certicate program at a junior college. Designed and developed a database and GUI using MySQLWorkbench and IntelliJ.</p>
-								</div>
-					</div>
- 				</div>
- 			</div>	
- 		</div>
-			-->
+		
 		<!--Portfolio with apps, thumbnails, projects, and pc-->			 	
 		<div id = "portfolio" class = "section">
 			<div class="container">
 				<div class = "row">
 					<div class = "heading">
-						<h2>PORTFOLIO</h2>
+						<h2>PROJECTS</h2>
 					</div>
 						<div class ="filter">
 							<ul id = "filters">
 								<li><a href = "#" data-filter = "*" class = "current"> ALL </a></li>
-								<li><a href = "#" data-filter = ".projects"> Projects </a></li>
-								<li><a href = "#" data-filter = ".group "> Group Projects </a></li>
+								<li><a href = "#" data-filter = ".projects"> Android Apps </a></li>
+								<li><a href = "#" data-filter = ".web "> Websites </a></li>
+								<li><a href = "#" data-filter = ".other "> Other </a></li>
 							</ul>
 						</div>
 
@@ -245,16 +137,16 @@
 
 							
 
-							<li class ="group col-xs-6 col-sm4 col-md-3 col-lg-3">
+							<li class ="other col-xs-6 col-sm4 col-md-3 col-lg-3">
 								<div class="item">
 								<img src="img/casinoTN.png">
 									
 									<div class="icons">
 										<a data-fancybox="gallery-b" href="img/ERD.png"
 										
-										 title="View Image"
+										 title="View Screenshots"
 										 class="openButton" data-fancybox data-caption = "Entity Relationship Diagram">
-										 <i class = "fas fa-search"></i>
+										 <i class="fa-sharp fa-solid fa-images"></i>
 											  
 											</a>
 
@@ -276,8 +168,8 @@
 											    </a>
 
 											</div>
-											<a href="reports/CasinoJDBC.pdf" target = "_blank" class="projectlink">
-												<i class = "fa fa-link"></i>
+											<a href="reports/CasinoJDBC.pdf" target = "_blank" title = "Read Document" class="projectlink">
+												<i class = "fa-solid fa-file"></i>
 											</a>
 									</div>
 									<div class="imageOverlay"></div>
@@ -287,105 +179,83 @@
 								</div>
 							</li>
 
-							<li class ="group  col-xs-6 col-sm4 col-md-3 col-lg-3">
+							<li class ="projects  col-xs-6 col-sm4 col-md-3 col-lg-3">
 								<div class="item">
-								<img src="img/appTN.jpeg">
+								<img src="img/starH.png">
 									<div class="icons">
-										<a href="img/dinoImg.jpeg" title="View Image"
-										 class="openButton" data-fancybox data-caption = "Dino ABC's">
-											<i class = "fas fa-search"></i>
+										<a href="img/StarHoard.mov" title="Play Video"
+										 class="openButton" data-fancybox data-caption = "Star Hoard">
+											<i class="fa-solid fa-video"></i>
 										</a>
-											<a href="" target = "_blank" class="projectlink">
-												<i class = "fa fa-link"></i>
+											<a href="https://github.com/andyV-323/StarHoard" title ="Github" target = "_blank" class="projectlink">
+												<i class="fa-brands fa-square-github"></i>
 											</a>
 									</div>
 									<div class="imageOverlay"></div>
 								</div>
+								<div class="projectTitle">
+									<h4>Star Hoard - Android Mobile Game
+								</div>
 							</li>
 
-
-							<li class ="projects col-xs-6 col-sm4 col-md-3 col-lg-3">
+							
+							<li class ="web col-xs-6 col-sm4 col-md-3 col-lg-3">
 								<div class="item">
-								<img src="img/appTN.jpeg">
+								<img src="img/portf.png">
 									<div class="icons">
-										<a href="img/dinoImg.jpeg" title="View Image"
-										 class="openButton" data-fancybox data-caption = "Dino ABC's">
-											<i class = "fas fa-search"></i>
-										</a>
-											<a href="" target = "_blank" class="projectlink">
-												<i class = "fa fa-link"></i>
+										
+											<a href="https://github.com/andyV-323/andyV-323.github.io" title = "Github" target = "_blank" class="projectlink">
+												<i class = "fa-brands fa-square-github"></i>
 											</a>
 									</div>
 									<div class="imageOverlay"></div>
+								</div>
+								<div class="projectTitle">
+									<h4>Portfolio - Website</h4>
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div> 
 				</div>
 			</div>
 		</div>
 				<!-- about me section and picture-->	 
-		<div id = "about" class = "section">
+		<div id = "about" class = "about">
+			<div class="aboutme">
+				
 			
 				<div class = "row">
+						<div class="col-md-5">
+					<img class="aboutImage" src="img/memoji.PNG">
+				</div>
+						<div class = "col-md-7">
+							<h3> Hi there i'm</h3>
+							<h1> Andy Valencia</h1>
+							 <h5> SOFTWARE ENGINEER</h5>
+							 <p>I'm a Software Engineer passionate about creating interactive applications and experiences on mobile platforms. I enjoy developing entertaining and educational mobile games. </p>
 
-						<div class = "col-md-7 text-center">
-							<h1> Hello
-							<br>my name is Andy Valencia
-							</h1>
+							 <div id = "resume" class="Resume">
+							 	<a href="reports/123Res.pdf" class="resumeButton">Resume</a>
+							 	<a href="https://www.linkedin.com/in/andyvalencia" target = "_blank" class="linkedin">
+							 		<i class="fa-brands fa-linkedin" style="font-size:40px;"></i></a>
+							 	<a href="https://github.com/andyV-323" target = "_blank" class="github">
+							 		<i class="fa-brands fa-github" style ="font-size: 40px;"></i></a>
 							 
-							 <p>I'm a recent graduate from California State University Dominguez Hills located in Carson, California. 
-							 	I earned my Bachelor of Science in Computer Science. I am currently seeking a role for growth and 
-							 	to develop additional skills from experienced professionals.</p>
-							 	<p> In my opinion nothing on the planet can measure 
-							 		the exponential growth and excitement in the tech industry, an industry which I want to be a part 
-							 		of, particularly Software Engineering. Computer Science and its immense diversity has interested me thoroughly. 
-							 		In particular: AR and VR technology, programming languages, machine learning, and building computers. These have stretched my knowledge of Computer Science and I always strive to expand my knowledge of these topics further.
 						</div>
 				</div>
 			</div>
 		</div>
+
+	
+
 			<!--Contact section with email-->
 		<div id = "contact" class = "contactSection section">
 			<div class = "col-md-12 text-center">
 				<p class = "subHeading">Contact </p>
 				<h2> I'd like to hear from you!</h2>
-				<button class ="open-button" onclick="openForm()"> GET IN TOUCH!</button>			
+				<a href="mailTo:andyvalencia.cs@gmail.com" class="contactButton">GET IN TOUCH!</a>			
 			</div>
 		</div>
-
-		<!-- A button to open the popup form 
-<button class="open-button" onclick="openForm()">Open Form</button>-->
-
-<!-- The form -->
-<div class="form-popup" id="myForm">
-  <form action="" method = "POST" class="form-container">
-    <h1>Contact</h1>
-
-
-     <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Full Name" name="fullName" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="message"><b>Message</b></label>
-    <textarea id = "message" name = "message" placeholder="Message"></textarea>
-    
-
-    <button  type="submit" name="send"class = "btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form> 
-</div> 
-
-
-
-
-
-
-    
-
-
 
 			<div class = "copyrightSection">
 				<div class = "col-md-12 text-center">
