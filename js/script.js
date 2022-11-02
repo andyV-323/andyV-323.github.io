@@ -18,54 +18,11 @@
 			pagination: 0
 
 		});
-//how many skill items are display per pixel
-	/*	$('.owl-carousel').owlCarousel({
-    loop:true,
-  	items:4,
-    responsive:{
-        0:{
-            items:1
-        },
-        480:{
-            items:2
-        },
-        768:{
-            items:4
-        },
-        938:{
-            items:6
-        }
-    }
-});
-		//the carousel and pie chart animation... when topOffset is reached start the piechart animation
-		var skillsTopOffset = $(".skills").offset().top;
 
-		$(window).scroll(function(){
-
-			console.log(window.pageYOffset);
-				
-				if(window.pageYOffset > skillsTopOffset - $(window).height() + 700){
-
-					$('.chart').easyPieChart({
-			easing: 'easeInOut',
-			barColor: '#fff',
-			trackColor: false,
-			scaleColor:false,
-			lineWidth: 4,
-			size: 152,
-			onStep: function(from, to, percent) {
-				$(this.el).find('.percent').text(Math.round(percent));
-			}
-		});
-
-
-			}
-		});
-*/
 
 //the animation for the letters being typed on slides
 		var typed = new Typed(".typed", {
-			strings: ["Software Engineer.", "Student.", "Gamer."],
+			strings: ["Software Engineer.", "Student."],
 			typeSpeed: 110,
 			loop: true,
 			startDelay: 1000,
@@ -129,16 +86,7 @@
 				hamburger.classList.remove("active");
 			navMenu.classList.remove("active");
 			}))
-		function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-			
-
-		
 
 
 
