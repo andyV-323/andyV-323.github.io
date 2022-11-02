@@ -51,32 +51,26 @@ body {
 
 .section {
 	padding: 100px 0;
-	background-color: #535c68;
+}
+
+.portSection{
+	padding: 100px 0;
+	background-color: #2f3640;
 }
 
 .aboutImage {
 	    max-width: 100%;
 }
 
-.skills {
-	background-color:#1289A7;
-	position: relative;
-	color: #fff;
-	margin-left: 0px;
-	margin-right: 0px;
-
+.aboutSection{
+	padding: 100px 0;
+	background-color: #dfe4ea;
 }
 
-.col-md-7 {
-	color: #fff;
-	padding-top: 120px;
-	padding-right: 160px;
-	color: #000;
-}
 
-.aboutme {
-	background-color:#dfe4ea ;
-}
+
+
+
 .h5, h5 {
 	color:  #1289A7;
 	font-weight: 900;
