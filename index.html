@@ -1,285 +1,293 @@
-
-
- 
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="favicon_io/site.webmanifest">
-	<!-- Mobile formatting -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--fancybox for imgs-->
-	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-	<!--fancybox-->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-	<!--superslides for top of pages imgs-->
-	<link rel="stylesheet" type="text/css" href="css/superslides.css">
-	<!--owl carousel for skills section-->
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-	<!-- bootstrap cdn-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<!-- style.css file-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--jquery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<!-- fontawesome for fonts-->
-	<script src="https://kit.fontawesome.com/3c028052b1.js" crossorigin="anonymous"></script>
-
-	<title>Andy Valencia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- Mobile formatting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fancybox for imgs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <!--fancybox-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <!--superslides for top of pages imgs-->
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <!--owl carousel for skills section-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- style.css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- fontawesome for fonts-->
+    <script src="https://kit.fontawesome.com/3c028052b1.js" crossorigin="anonymous"></script>
+    <title>Andy Valencia</title>
 </head>
-	<body>
-		<!--logo for loading page -->
-		<div class = "loader">
-		<div class ="inner">
-			
-		</div>
-		</div>
 
-	<header>
-		<!--navigation bar--> 
-		<div class = "container">
-			<div class=" subContainer">
-				<nav class="navbar">
-					<a href="#slides" class="nav-branding">HOME</a>
-					
-					<ul class="nav-menu">
-						<li class="nav-item">
-							<a href ="#about" class="nav-link">About</a>
-						</li>
-						<li class="nav-branding">
-							<a href ="reports/AndyValencia.pdf" target="=_blank"class="resumeBtn">Resume</a>
-						</li>
-						<li class="nav-branding">
-							<a href ="mailTo:andyvalencia.cs@gmail.com" class="contactBtn">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a href ="#portfolio" class="nav-link">Projects</a>
-						</li>
-					</ul>
-					<!--Hamburger-->
-				<div class="hamburger">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
-			</div>
-		</div>
-	</header>
-		<!--slides, title, and control buttons-->
-		<div id="slides">
-			<div class= "overlay"></div>
-				<div class="slides-container">
-					<img src="img/slide1.jpeg" alt="">
-		   			<img src="img/slide2.jpeg" alt="">
-		   			
-	  			</div>
-
-  					<div class = "titleMessage">
-  						<div class = "heading">
-			  				<p class = "main">ANDY VALENCIA</p>
-			  				<p class = "sub typed"></p>
-  						</div>
-  					</div>
-  			
-	 	</div>
-
-	 	
-		
-
-		
-		<!--Portfolio with apps, thumbnails, projects, and pc-->			 	
-		<div id = "portfolio" class = "portSection">
-			<div class="container">
-				<div class = "row">
-					<div class = "heading">
-						<h2>PROJECTS</h2>
-					</div>
-						<div class ="filter">
-							<ul id = "filters">
-								<li><a href = "#" data-filter = "*" class = "current"> ALL </a></li>
-								<li><a href = "#" data-filter = ".projects"> Android Apps </a></li>
-								<li><a href = "#" data-filter = ".web "> Websites </a></li>
-								<li><a href = "#" data-filter = ".other "> Other </a></li>
-							</ul>
-						</div>
-
-					<div class = "itemsContainer">
-						<ul class = "items">
-							<!--Thumbnails with fanccybox-->
-							<li class ="projects col-xs-6 col-sm4 col-md-3 col-lg-3">
-								<div class="item">
-									<img src="img/Fly2.png">
-									
-									<div class="icons">
-											<a href="img/DinoABCs.mp4" title="Play Video"
-										 class="openButton" data-fancybox data-caption = "Dino ABC's">
-											<i class="fa-solid fa-video"></i>
-										</a>
-
-											<div style="display:none">
-											  <a data-fancybox="gallery-a" href="img/code.jpeg">
-											    
-											  </a>
-											  
-											</div>
-										
-										<!--	<a href="reports/report.pdf" target = "_blank" title ="README" class="projectlink">
-												<i class = "fa-solid fa-file"></i>
-											</a>-->
-									</div>
-									<div class="imageOverlay"></div>
-								</div>
-								<div class = "projectTitle">
-									<h4>Dino ABCs - AR Android App</h4>
-								</div>
-							</li>
-
-							
-
-							<li class ="other col-xs-6 col-sm4 col-md-3 col-lg-3">
-								<div class="item">
-								<img src="img/casinoTN.png">
-									
-									<div class="icons">
-										<a data-fancybox="gallery-b" href="img/ERD.png"
-										
-										 title="View Screenshots"
-										 class="openButton" data-fancybox data-caption = "Entity Relationship Diagram">
-										 <i class="fa-sharp fa-solid fa-images"></i>
-											  
-											</a>
-
-											<div style="display:none">
-											  <a data-fancybox="gallery-b" href="img/GuiCompiled.png"
-											  	data-fancybox data-caption = "Graphical User Interface">
-											    </a>
-											  </div>
-
-											  <div style="display:none">
-											  <a data-fancybox="gallery-b" href="img/o_Membership.png"
-											  	data-fancybox data-caption = "GUI displaying customer information">
-											    </a>
-											</div>
-
-											    <div style="display:none">
-											  <a data-fancybox="gallery-b" href="img/MySQL1.png"
-											  	data-fancybox data-caption = "Casino Schema with tables">
-											    </a>
-
-											</div>
-											<a href="reports/CasinoJDBC.pdf" target = "_blank" title = "README" class="projectlink">
-												<i class = "fa-solid fa-file"></i>
-											</a>
-									</div>
-									<div class="imageOverlay"></div>
-								</div>
-								<div class = "projectTitle">
-									<h4>Casino Database - Java Swing</h4>
-								</div>
-							</li>
-
-							<li class ="projects  col-xs-6 col-sm4 col-md-3 col-lg-3">
-								<div class="item">
-								<img src="img/starH.png">
-									<div class="icons">
-										<a href="img/StarHoard.mp4" title="Play Video"
-										 class="openButton" data-fancybox data-caption = "Star Hoard">
-											<i class="fa-solid fa-video"></i>
-										</a>
-											<a href="https://github.com/andyV-323/StarHoard" title ="Github" target = "_blank" class="projectlink">
-												<i class="fa-brands fa-square-github"></i>
-											</a>
-									</div>
-									<div class="imageOverlay"></div>
-								</div>
-								<div class="projectTitle">
-									<h4>Star Hoard - Android Mobile Game
-								</div>
-							</li>
-
-							
-							<li class ="web col-xs-6 col-sm4 col-md-3 col-lg-3">
-								<div class="item">
-								<img src="img/Portf.png">
-									<div class="icons">
-										
-											<a href="https://github.com/andyV-323/andyV-323.github.io" title = "Github" target = "_blank" class="projectlink">
-												<i class = "fa-brands fa-square-github"></i>
-											</a>
-									</div>
-									<div class="imageOverlay"></div>
-								</div>
-								<div class="projectTitle">
-									<h4>Portfolio - Website</h4>
-								</div>
-							</li>
-						</ul>
-					</div> 
-				</div>
-			</div>
-		</div>
-				<!-- about me section and picture-->	 
-		<div id = "about" class = "aboutSection ">
-			<div class="container">
-				
-			
-				<div class = "row">
-						<div class="col-md-5 ">
-					<img class="aboutImage" src="img/memoji.PNG">
-				</div>
-						<div class = "col-md-7 ">
-							<h3> Hi there i'm</h3>
-							<h1> Andy Valencia</h1>
-							 <h5> SOFTWARE ENGINEER</h5>
-							 <p>I'm a Software Engineer passionate about creating interactive applications and experiences on mobile platforms. I enjoy developing entertaining and educational mobile games. </p>
-
-							 <div id = "resume" class="Resume">
-							 	<a href="reports/AndyValencia.pdf" class="resumeButton">Resume</a>
-							 	<a href="https://www.linkedin.com/in/andyvalencia" target = "_blank" class="linkedin">
-							 		<i class="fa-brands fa-linkedin" style="font-size:40px;"></i></a>
-							 	<a href="https://github.com/andyV-323" target = "_blank" class="github">
-							 		<i class="fa-brands fa-github" style ="font-size: 40px;"></i></a>
-							 
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-
-			<!--Contact section with email-->
-		<div id = "contact" class = "contactSection section">
-			<div class = "col-md-12 text-center">
-				<p class = "subHeading">Contact </p>
-				<h2> I'd like to hear from you!</h2>
-				<a href="mailTo:andyvalencia.cs@gmail.com" class="contactButton">GET IN TOUCH!</a>			
-			</div>
-		</div>
-
-			<div class = "copyrightSection">
-				<div class = "col-md-12 text-center">
-					<p>&copy; Copyright Andy Valencia 2022</p>	
-				</div>
-			</div>
-
-
-
-							
-
-
-	<script src="js/jquery.superslides.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-	<script src="js/typed.min.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-	<script type="src = https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-	<script src="js/script.js"></script>
+<body>
+    <!--logo for loading page -->
+    <div class="loader">
+        <div class="inner">
+        </div>
+    </div>
+    <header>
+        <!--navigation bar-->
+        <div class="container">
+            <div class=" subContainer">
+                <nav class="navbar">
+                    <a href="#home" class="nav-branding">HOME</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="contactBtn">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Projects</a>
+                        </li>
+                    </ul>
+                    <!--Hamburger-->
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <!-- about me section and picture-->
+    <div id="home" class="aboutSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 ">
+                    <img class="aboutImage" src="img/memoji.png">
+                </div>
+                <div class="col-md-7 ">
+                    <h3 id="intro">Hello! I'm</h3>
+                    <h1>&lt;ANDY VALENCIA&gt;</h1>
+                    <div class="typing">
+                        <p class="sub typed"></p>
+                    </div>
+                    <p id="aboutMeMessage"> I am passionate about developing interactive applications and experiences that run seamlessly across multiple platforms. I take great pride in my ability to write and develop using clean code.</p>
+                    <div id="aboutMeBtn">
+                        <a href="img/resume.png" title="Resume" class="Buttons" data-fancybox data-caption="Resume">
+                            Resume</a>
+                        <a href="#portfolio" class="Buttons">Projects</a>
+                    </div>
+                    <div class="socialMedia">
+                        <a id="LinkedIn" href="https://www.linkedin.com/in/andyvalencia" target="_blank" class="linkedin">
+                            <i class="fa-brands fa-linkedin" style="font-size:40px;"></i></a>
+                        <a id="GitHub" href="https://github.com/andyV-323" target="_blank" class="github">
+                            <i class="fa-brands fa-github" style="font-size: 40px;"></i></a>
+                        <a id="Fiverr" href="https://www.fiverr.com/andyvalencia323" target="_blank" class="fiverr">
+                            <i class="fa-brands fa-fiverr" style="font-size: 40px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Portfolio with apps, thumbnails, projects, and pc-->
+    <div id="portfolio" class="portSection">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>PROJECTS</h2>
+                    <hr>
+                </div>
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current"> ALL </a></li>
+                        <li><a href="#" data-filter=".projects"> Android Apps </a></li>
+                        <li><a href="#" data-filter=".web "> Websites </a></li>
+                        <li><a href="#" data-filter=".other "> Other </a></li>
+                    </ul>
+                </div>
+                <div class="itemsContainer">
+                    <ul class="items">
+                        <!--Thumbnails with fanccybox-->
+                        <li class="web  col-xs-6 col-sm4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/harbordisTN.png">
+                                <div class="icons">
+                                    <a href="img/harborDistribution.mp4" title="Play Video" class="openButton" data-fancybox data-caption="Harbor Distribution">
+                                        <i class="fa-solid fa-video"></i>
+                                    </a>
+                                    <a href="https://github.com/andyV-323/Harbor-Distribution-Playbook" title="Github" target="_blank" class="projectlink">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="tools">
+                                <img src="img/html.png" id="tool"></img>
+                                <img src="img/css.png" id="tool"></img>
+                                <img src="img/js.png" id="tool"></img>
+                                <img src="img/bootstrap.png" id="tool"></img>
+                                <img src="img/nodeJs.png" id="tool"></img>
+                                <img src="img/heroku.png" id="tool"></img>
+                                <img src="img/git.png" id="tool"></img>
+                            </div>
+                            <div class="projectTitle">
+                                <h4>Harbor Distribution - CRUD Website</h4>
+                            </div>
+                        </li>
+                        <li class="web col-xs-6 col-sm4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/portfolioTN.png">
+                                <div class="icons">
+                                    <a href="https://github.com/andyV-323/andyV-323.github.io" title="Github" target="_blank" class="projectlink">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="tools">
+                                <img src="img/html.png" id="tool"></img>
+                                <img src="img/css.png" id="tool"></img>
+                                <img src="img/js.png" id="tool"></img>
+                                <img src="img/bootstrap.png" id="tool"></img>
+                                <img src="img/github.png" id="tool"></img>
+                            </div>
+                            <div class="projectTitle">
+                                <h4>Portfolio - Website</h4>
+                            </div>
+                        </li>
+                        <li class="projects col-xs-6 col-sm4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/dinoAbcTN.png">
+                                <div class="icons">
+                                    <a href="img/DinoABCs.mp4" title="Play Video" class="openButton" data-fancybox data-caption="Dino ABC's">
+                                        <i class="fa-solid fa-video"></i>
+                                    </a>
+                                    <div style="display:none">
+                                        <a data-fancybox="gallery-a" href="img/code.jpeg">
+                                        </a>
+                                    </div>
+                                    <!--    <a href="reports/report.pdf" target = "_blank" title ="README" class="projectlink">
+                                                <i class = "fa-solid fa-file"></i>
+                                            </a>-->
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="tools">
+                                <img src="img/cSharp.png" id="tool"></img>
+                                <img src="img/unity.png" id="tool"></img>
+                                <img src="img/android.png" id="tool"></img>
+                                <img src="img/visualStudio.png" id="tool"></img>
+                            </div>
+                            <div class="projectTitle">
+                                <h4>Dino ABCs - AR Android App</h4>
+                            </div>
+                        </li>
+                        <li class="projects  col-xs-6 col-sm4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/starhoardTN.png">
+                                <div class="icons">
+                                    <a href="img/StarHoard.mp4" title="Play Video" class="openButton" data-fancybox data-caption="Star Hoard">
+                                        <i class="fa-solid fa-video"></i>
+                                    </a>
+                                    <a href="https://github.com/andyV-323/StarHoard" title="Github" target="_blank" class="projectlink">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="tools">
+                                <img src="img/java.png" id="tool"></img>
+                                <img src="img/android.png" id="tool"></img>
+                                <img src="img/libGDX.png" id="tool"></img>
+                                <img src="img/intelliJ.png" id="tool"></img>
+                            </div>
+                            <div class="projectTitle">
+                                <h4>Star Hoard - Android Mobile Game
+                            </div>
+                        </li>
+                        <li class="other col-xs-6 col-sm4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="img/casinoTN.png">
+                                <div class="icons">
+                                    <a data-fancybox="gallery-b" href="img/ERD.png" title="View Screenshots" class="openButton" data-fancybox data-caption="Entity Relationship Diagram">
+                                        <i class="fa-sharp fa-solid fa-images"></i>
+                                    </a>
+                                    <div style="display:none">
+                                        <a data-fancybox="gallery-b" href="img/GuiCompiled.png" data-fancybox data-caption="Graphical User Interface">
+                                        </a>
+                                    </div>
+                                    <div style="display:none">
+                                        <a data-fancybox="gallery-b" href="img/o_Membership.png" data-fancybox data-caption="GUI displaying customer information">
+                                        </a>
+                                    </div>
+                                    <div style="display:none">
+                                        <a data-fancybox="gallery-b" href="img/MySQL1.png" data-fancybox data-caption="Casino Schema with tables">
+                                        </a>
+                                    </div>
+                                    <a href="reports/CasinoJDBC.pdf" target="_blank" title="README" class="projectlink">
+                                        <i class="fa-solid fa-file"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+                            </div>
+                            <div class="tools">
+                                <img src="img/java.png" id="tool"></img>
+                                <img src="img/intelliJ.png" id="tool"></img>
+                            </div>
+                            <div class="projectTitle">
+                                <h4>Casino Database - Java Swing</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="aboutSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 ">
+                    <h1 id="aboutMeTitle">About Me</h1>
+                    <hr id="aboutMeHr">
+                    <p id="aboutMeMessage">
+                        Hi there! I'm Andy Valencia, a software engineer from Los Angeles. I have a strong computer science background and specialize in mobile app development for the Android platform and full-stack web development.
+                        <span id="dots">...</span><span id="more"><br><br>
+                            What I love most about technology is the ability to create something from nothing. Building software and seeing it come to life is a gratifying experience, and I'm always eager to tackle new challenges and improve my skills.<br><br>
+                            When I'm not coding, you can find me exploring the cultural scene of Los Angeles. Whether trying new foods, attending anime and video game events, or sports games like the LAFC vs. LA Galaxy matches, I always find something to enjoy in this vibrant city.<br><br>
+                            As a hardworking and dedicated developer, I always look for new ways to improve my skills and solve complex problems. The combination of web and mobile app development is the perfect fusion of my two passions, and I take pride in seeing how my efforts help users improve their experiences.</span></p>
+                    <a onclick="myFunction()" id="myBtn">Read More</a>
+                </div>
+                <div class="col-md-5 ">
+                    <img class="aboutImage" id="memoji2" src="img/memoji2.PNG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact section with email-->
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text-center">
+            <p class="subHeading">Contact </p>
+            <h2> I'd like to hear from you!</h2>
+            <a href="mailTo:andyvalencia.cs@gmail.com" class="Button">GET IN TOUCH!</a>
+        </div>
+    </div>
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Andy Valencia 2023</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="src = https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
