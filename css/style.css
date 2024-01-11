@@ -65,16 +65,16 @@ body {
   margin-right: auto;
   width: 75%;
   text-align: center;
-  background-color: #fff;
+  background-color: #bdc3c7;
 }
 
 .col-md-5 {
-  background-color: #fff;
+  background-color: #bdc3c7;
 }
 
 .aboutSection {
   padding: 70px 0 0;
-  background-color: #fff;
+  background-color: #bdc3c7;
 }
 
 .socialMedia {
@@ -387,7 +387,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: black;
   z-index: 300;
 }
 
@@ -396,7 +396,7 @@ li {
 }
 
 a {
-  color: black;
+  color: White;
   text-decoration: none;
 }
 
@@ -404,7 +404,12 @@ a:hover {
   color: #1289a7;
   text-decoration: none;
 }
-
+#myBtn {
+  color: black;
+}
+#myBtn:hover {
+  color: #1289a7;
+}
 .container {
   width: 1600px;
   margin: auto;
@@ -441,7 +446,7 @@ a:hover {
   height: 3px;
   margin: 5px 0;
   transition: all 0.3s ease;
-  background-color: black;
+  background-color: White;
 }
 
 .bar:hover {
@@ -479,7 +484,7 @@ a:hover {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #fff;
+    background-color: black;
     width: 100%;
     text-align: center;
     transition: 0.3s;
